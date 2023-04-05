@@ -1,0 +1,64 @@
+{
+  "cities": [
+    {
+      "name": "New York",
+      "state": "NY",
+      "latitude": 40.7128,
+      "longitude": -74.0060,
+      "current_weather": {
+        "temperature": 72,
+        "conditions": "sunny",
+        "wind_speed": 10,
+        "humidity": 60
+      }
+    },
+    {
+      "name": "Los Angeles",
+      "state": "CA",
+      "latitude": 34.0522,
+      "longitude": -118.2437,
+      "current_weather": {
+        "temperature": 68,
+        "conditions": "partly cloudy",
+        "wind_speed": 8,
+        "humidity": 70
+      }
+    },
+    {
+      "name": "Chicago",
+      "state": "IL",
+      "latitude": 41.8781,
+      "longitude": -87.6298,
+      "current_weather": {
+        "temperature": 58,
+        "conditions": "cloudy",
+        "wind_speed": 12,
+        "humidity": 80
+      }
+    },
+    {
+      "name": "Houston",
+      "state": "TX",
+      "latitude": 29.7604,
+      "longitude": -95.3698,
+      "current_weather": {
+        "temperature": 75,
+        "conditions": "sunny",
+        "wind_speed": 6,
+        "humidity": 50
+      }
+    },
+    {
+      "name": "Miami",
+      "state": "FL",
+      "latitude": 25.7617,
+      "longitude": -80.1918,
+      "current_weather": {
+        "temperature": 82,
+        "conditions": "sunny",
+        "wind_speed": 8,
+        "humidity": 55
+      }
+    }
+  ]
+}

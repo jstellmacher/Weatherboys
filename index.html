@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER!</title>
+  </head>
+  <style>
+    body {
+      background-color: lightblue
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Weather</h1>
+    </div>
+    <div class= "card">
+      <div class="search">
+        <input type="text" class= "search-bar">
+        <script src ="index.css">
+          
+    </script>
+    
+    <script defer src="index.js">
+    </script>
+  </body>
+
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      /* Add some basic styling */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      input[type="text"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      button {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: blue;
+        color: #fff;
+        cursor: pointer;
+      }
+      .weather {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <form>
+        <label for="city">Enter a city:</label>
+        <input type="text" id="city" placeholder="e.g. New York" />
+        <button type="button" onclick="getWeather()">Get Weather</button>
+      </form>
+      <div class="weather" id="weather"></div>
+    </div>
+    <script>
+      function getWeather() {
+        const city = document.getElementById("city").value;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
+        fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            const weather = document.getElementById("weather");
+            weather.innerHTML = `
+              <h2>Current Weather in ${data.name}</h2>
+              <p>Temperature: ${(data.main.temp - 273.15).toFixed(2)}&deg;C</p>
+              <p>Description: ${data.weather[0].description}</p>
+            `;
+          })
+          .catch((error) => console.error(error));
+      }
+    </script>
+  </body>
+</html> -->
