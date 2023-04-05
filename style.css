@@ -1,0 +1,27 @@
+/* make sure the page starts conformed */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgba(11, 67, 134, 0.719)
+}
+
+/* nav */
+
+
+/* body */
+.potato{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+
+}
+h1{
+    color: white;
+}
+/* ????????? */
+/* footer */
+/* Weather */
