@@ -6,14 +6,14 @@
 //     console.log(city)
 // })
 // });
-// function myFunction() {
-//   const x = document.getElementById("myTopnav");
-//   if (x.className === "topnav") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "topnav";
-//   }
-// }
+function myFunction() {
+  const x = document.getElementById("nav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
 // !
 feather.replace();
 // ! feather icon^
@@ -43,10 +43,10 @@ const fetchWeather = (lat, long) => {
     .then(displayData);
 };
 
-function displayData(wetData){
-    debugger
-    results.textContent = `
-    wetData.
-    `
+function displayData(wetData) {
+  debugger;
+  results.textContent = `
+    
+    `;
 }
-document.addEventListener("DOMContentLoaded", getLocation)
+document.addEventListener("DOMContentLoaded", getLocation);
