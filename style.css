@@ -9,30 +9,41 @@ body{
 }
 
 /* nav */
-nav {
-    background-color: #ffffff;
-    overflow: hidden;
-    width: 100vh;
+/* ! NOT WORKING FULLY */
+.logo{
+   color: white;
+   width: 20px;
+   height: 20px;
 }
+/* !not working fully^ */
 nav{
-    float: left;
-    display: block;
-    color: #f2f2f2;
+    background-color: rgba(0, 221, 255, 0.8);
+    height: 4rem;
+}
+nav ul{
+    list-style: none;
+    margin: 2px;
+    padding: 4px;
+}
+nav li{
+    
+    float: right;
+    padding: 10px;
+    background: rgb(0, 76, 255);
     text-align: center;
-    padding: 14px 16px;
+    margin-left: 5px;
+    
+}
+nav li a{
+    font-size: larger;
     text-decoration: none;
-    font-size: 17px;
+    color: rgb(255, 255, 255);
+
 }
-nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-nav a.active {
-    background-color: aqua;
+nav li:hover{
+    background: red;
+    opacity: 0.8;
     color: white;
-}
-nav .icon{
-    display:none;
 }
 /* body */
 body{
