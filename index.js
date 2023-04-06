@@ -49,4 +49,14 @@ function displayData(wetData) {
     
     `;
 }
+
 document.addEventListener("DOMContentLoaded", getLocation);
+
+const submitForm = document.addEventListener("click", (e)=>{
+    console.log("I was submitted");
+    e.preventDefault;
+    
+});
+
+// const inputBar = document.querySelector("inputbar");
+// e.target.inputbar.value;
