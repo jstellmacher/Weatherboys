@@ -44,7 +44,7 @@ const fetchWeather = (lat, long) => {
 };
 
 function displayData(wetData) {
-  debugger;
+  //debugger;
   results.textContent = `
     
     `;
