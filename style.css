@@ -5,7 +5,8 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body{
-    background-color: rgb(2, 30, 63)
+    background-color: #021e3f;
+    background-image: linear-gradient(160deg, #021e3f 0%, #80D0C7 100%);
 }
 
 /* nav */
@@ -18,8 +19,11 @@ body{
 }
 /* !not working fully^ */
 nav{
-    background-color: rgba(0, 221, 255, 0.8);
-    height: 6rem;
+background-color: #021e3fa7;
+
+/* background-image: linear-gradient(-100deg, #021e3f 10%, #80D0C7 90%); */
+height: 6rem;
+border-radius: 0px 0px 25px 25px;
 }
 nav ul{
     list-style: none;
@@ -30,8 +34,8 @@ nav li{
     margin: 0px 0px 0px 10px;
     padding: 10px 20px 10px 20px;
     float: right;
-    background: rgb(0, 76, 255);
-    
+    background: rgb(74, 106, 181);
+    border-radius: 25px 0px 25px 25px;
 }
 nav li a{
     font-size: larger;
@@ -40,25 +44,32 @@ nav li a{
 
 }
 nav li:hover{
-    background: red;
+    background: rgb(0, 85, 255);
     opacity: 0.8;
     color: white;
 }
 /* body */
 body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    text-decoration: none;
+    /* text-align: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* min-height: 100vh; */
 }
+/* !^^^^"global centering kind of" */
 .card{
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.24);
+    height: 60vh;
+    width: 100vw;
+    
     border-radius: 25px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.9px);
-    -webkit-backdrop-filter: blur(6.9px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6.9px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     }
+    /* !!learn to understand all portions^^^^^^^^ */
 .potato{
     margin: auto;
     width: 50%;
@@ -66,9 +77,17 @@ body{
     text-align: center;
 
 }
+.search{
+    text-align: center;
+}
+
 h1{
     color: white;
 }
+h4{
+    font-size: 30px;
+}
+
 /* ????????? */
 /* footer */
 .footer{
