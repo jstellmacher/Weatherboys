@@ -80,6 +80,24 @@ body{
 .search{
     text-align: center;
 }
+#inputbar{
+    border-radius: 25px 0px 25px 25px;
+    margin: 10px;
+    height: 2rem;
+    border: white;    
+}
+#submitBtn{
+    border-radius: 25px 0px 25px 25px;
+    margin-left: 2px;
+    width: 6rem;
+    height: 2rem;
+    border: white;
+}
+#submitBtn:hover{
+    background: rgb(0, 85, 255);    
+    color: white;
+    border: white;
+}
 
 h1{
     color: white;
