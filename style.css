@@ -48,7 +48,7 @@ nav li:hover{
     opacity: 0.8;
     color: white;
 }
-/* body */
+/* ????????????????????????? body */
 body{
     text-decoration: none;
     /* text-align: center; */
@@ -57,6 +57,16 @@ body{
     /* min-height: 100vh; */
 }
 /* !^^^^"global centering kind of" */
+#moreData{
+    background: rgba(255, 255, 255, 0.24);
+        height: 20vh;
+        width: 60vw;
+        border-radius: 25px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.9px);
+        backdrop-filter: blur(6.9px);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+}
 .card{
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.24);

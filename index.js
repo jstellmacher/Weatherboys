@@ -44,19 +44,31 @@ const fetchWeather = (lat, long) => {
 };
 
 function displayData(wetData) {
-  //debugger;
+  debugger;
   results.textContent = `
-    
+    At this time ${daily.time[0]} it is at max temperature ${daily.temperature_2m_max}
     `;
 }
+// !!!!!!!!!!!!!!!!!!!!!!!!^^^ Why am I not able to see the data? is it because of the wrong syntax?
 
 document.addEventListener("DOMContentLoaded", getLocation);
 
-const submitForm = document.addEventListener("click", (e)=>{
-    console.log("I was submitted");
-    e.preventDefault;
-    
+const submitBtn = document.addEventListener("click", () => {
+  const submitClick = document.querySelector("submitBtn");
 });
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ^ click
+// const submitForm = document.addEventListener("submit", (e) => {
+//   preventDefault();
+//   console.log(e);
+//   const inputVal = e.target.submitBtn.value;
 
+// });
 // const inputBar = document.querySelector("inputbar");
 // e.target.inputbar.value;
+
+const hoverData = document.addEventListener("mouseover", (e) => {
+document.querySelector("moreData");
+  const title = document.createElement(h5);
+  title.textContent = "Extra Information";
+});
+//onmouseover = (e) =>{}
