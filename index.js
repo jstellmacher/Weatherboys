@@ -17,6 +17,33 @@ function myFunction() {
 // !
 feather.replace();
 // ! feather icon^
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+
+// !
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
@@ -41,22 +68,28 @@ const fetchWeather = (lat, long) => {
   )
     .then((r) => r.json())
     .then(displayData);
+  // .then(console.log("hello"));
 };
+const results = document.querySelector("#results");
 
+//console.log(results);
 function displayData(wetData) {
-  debugger;
+  //debugger;
+  //console.log(wetData);
   results.textContent = `
-    At this time ${daily.time[0]} it is at max temperature ${daily.temperature_2m_max}
+    On the date ${wetData.daily.time} it is at max temperature ${wetData.daily.temperature_2m_max}
     `;
+  console.log(results.textContent);
 }
-// !!!!!!!!!!!!!!!!!!!!!!!!^^^ Why am I not able to see the data? is it because of the wrong syntax?
+
+// ^^^ Why am I not able to see the data? is it because of the wrong syntax?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 document.addEventListener("DOMContentLoaded", getLocation);
 
 const submitBtn = document.addEventListener("click", () => {
   const submitClick = document.querySelector("submitBtn");
 });
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ^ click
+//  ^ click
 // const submitForm = document.addEventListener("submit", (e) => {
 //   preventDefault();
 //   console.log(e);
@@ -66,9 +99,9 @@ const submitBtn = document.addEventListener("click", () => {
 // const inputBar = document.querySelector("inputbar");
 // e.target.inputbar.value;
 
-const hoverData = document.addEventListener("mouseover", (e) => {
-document.querySelector("moreData");
-  const title = document.createElement(h5);
-  title.textContent = "Extra Information";
-});
+// const hoverData = document.addEventListener("mouseover", (e) => {
+// document.querySelector("moreData");
+//   const title = document.createElement(h5);
+//   title.textContent = "Extra Information";
+// });
 //onmouseover = (e) =>{}
