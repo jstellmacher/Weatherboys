@@ -71,7 +71,35 @@ const fetchWeather = (lat, long) => {
     `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_sum,windspeed_10m_max&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&forecast_days=1&timezone=America%2FDenver`
   )
     .then((r) => r.json())
-    .then(displayData);
+    .then((data) => {
+      displayData(data);
+      hoverBtn.addEventListener("mouseenter", () => {
+        console.log("You hovered over me!");
+        const newResults = document.createElement("div");
+        newResults.className = "newResults";
+        const riseSpan = document.createElement("span");
+        const setSpan = document.createElement("span");
+        riseSpan.className = "riseDetails";
+        riseSpan.textContent = `Sunrise: ${data.daily.sunrise}`;
+        setSpan.className = "riseDetails";
+        setSpan.textContent = `Sunset: ${data.daily.sunset}`;
+        newResults.append(riseSpan, setSpan);
+        resultDiv.hidden = true;
+        // results.innerHTML = "";
+        document.querySelector(".newResults")?.remove();
+        // safe navigator operator^^^
+        results.append(newResults);
+      });
+      const byeHoverFun = hoverBtn.addEventListener("mouseleave", (e) => {
+        //document.querySelector("moreData");
+        const newResults = document.querySelector(".newResults");
+        newResults.remove();
+        resultDiv.hidden = false;
+
+        console.log("You left!");
+      });
+    });
+
   // .then(console.log("hello"));
 };
 const results = document.querySelector("#results");
@@ -80,10 +108,11 @@ const results = document.querySelector("#results");
 function displayData(wetData) {
   //debugger;
   //console.log(wetData);
-  results.textContent = `
+//   results.innerHTML = "";
+
+  results.innerHTML = `<div id="resultDiv">
     On the date ${wetData.daily.time} it is at max temperature ${wetData.daily.temperature_2m_max}
-    `;
-  //console.log(results.textContent);
+    </div>`;
 }
 const moreResults = document.querySelector("#moreData");
 function hoverData(wetData) {
@@ -96,33 +125,44 @@ const submitBtn = document.addEventListener("click", () => {
   const submitClick = document.querySelector("submitBtn");
 });
 //?  ^ click
-// const submitForm = document.addEventListener("submit", (e) => {
-//   preventDefault();
-//   console.log(e);
-//   const inputVal = e.target.submitBtn.value;
-// });
+search.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log(e.target[0].value);
+  fetch(
+    "https://maps.googleapis.com/maps/api/geocode/json?address=" +
+      e.target[0].value +
+      "&key=" +
+      "AIzaSyAYE9HJBCt7WvmgwG_KvuPmTkvOAvVy8TY"
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      // debugger;
+      if (data.results.length === 0){
+        alert("Please Use Different Location")
+      } else {
+        
+
+      const latitude = data.results[0].geometry.location.lat;
+      const longitude = data.results[0].geometry.location.lng;
+      console.log({ latitude, longitude });
+      
+      error.textContent =
+        // rome-ignore lint/style/useTemplate: <explanation>
+        `Latitude:  
+    ${latitude}
+    
+    Longitude:  
+    ${longitude}`;
+}
+e.target[0].value = "";
+    })
+    
+});
+
 // const inputBar = document.querySelector("inputbar");
 // e.target.inputbar.value;
 const plzWork = document.querySelector("#hoverBtn");
-const leave = document.querySelector("#hoverBtn");
+// const leave = document.querySelector("#hoverBtn");
 // ???????????????????????????????????????????????????????????????????????????? Section Break
-const hoverFun = document.addEventListener("mouseenter", (e) => {
-  document.querySelector("moreData");
-  const title = document.querySelector("#hoverBtn");
-  e.target.plzWork = console.log("You hovered over me!");
-
-  
-  if (hoverFun) {
-    document.getElementById("moreData").hidden = true;
-    title.textContent = "Extra Information";
-  } else {
-    document.getElementById("moreData").hidden = false;
-  }
-});
-const byeHoverFun = document.addEventListener("mouseleave", (e) => {
-  document.querySelector("moreData");
-  const title = document.querySelector("#hoverBtn");
-  console.log("You left!");
-});
 // ???????????????????????????????????????????????????????????????????????????? Section Break
 // onmouseover = (e) => {};

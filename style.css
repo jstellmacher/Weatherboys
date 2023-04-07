@@ -77,11 +77,11 @@ div#error{
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
 div#hoverBtn{
-    position:relative; left: 19vw; top: 8vh;
+    position:relative; left: 30%; top: 20%;
     /* double check ^ */
     text-align: center;
-    height:4vh;
-    width: 20vw;
+    height:40%;
+    width: 40%;
     background: rgb(255, 0, 0);
     border-radius: 25px;
     
