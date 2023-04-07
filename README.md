@@ -13,3 +13,6 @@ Github site version of it: [Weather App](https://jstellmacher.github.io/Weatherb
 Article about it ^: [Article Link](https://dev.to/jstellmacher/that-is-so-fetch-weather-api-webapp-1fo5)
 
 <hr>
+
+Preview of Process
+![]("./img/")
