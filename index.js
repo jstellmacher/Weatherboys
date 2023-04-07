@@ -100,9 +100,7 @@ const submitBtn = document.addEventListener("click", () => {
 //   preventDefault();
 //   console.log(e);
 //   const inputVal = e.target.submitBtn.value;
-
 // });
-
 // const inputBar = document.querySelector("inputbar");
 // e.target.inputbar.value;
 const plzWork = document.querySelector("#hoverBtn");
