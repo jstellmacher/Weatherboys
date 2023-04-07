@@ -7,6 +7,7 @@
 body{
     background-color: #021e3f;
     background-image: linear-gradient(160deg, #021e3f 0%, #80D0C7 100%);
+    height: 100vh;
 }
 
 /* nav */
@@ -92,10 +93,20 @@ div #hoverBtn{
     
 }
 #hoverBtn:hover{
-    background: rgb(0, 85, 255);
+    background: hsla(221, 45%, 73%, 1);
+    
+        background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    
+        background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    
+        background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1);
     transition: transform 250ms ease-in-out;
 }
 h3{
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
     font-size: 2rem;
     text-align: center;
     color: white;
@@ -109,9 +120,11 @@ h3{
 }
 .newResults{
     text-align: center;
-    margin-top: 20%;
+    margin-top: 18%;
+    margin-bottom: 18%;
     font-size: 1.5rem;
 }
+
 #results{
     background: rgba(255, 255, 255, 0.24);
     height: 20vh;
@@ -131,7 +144,7 @@ h3{
     align-items: center;
     background: rgba(255, 255, 255, 0.24);
     height: 60vh;
-    width: 100vw;
+    width: 100%;
     
     border-radius: 25px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -181,6 +194,7 @@ h4{
 /* ????????? */
 /* footer */
 .footer{
+    
     background: #666;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -190,3 +204,27 @@ h4{
     padding: 55px 50px;
 }
 /* Weather */
+#foot{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.24);
+    height: 40%;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    backdrop-filter: blur(6.9px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+#contact{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+}
+#about{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
