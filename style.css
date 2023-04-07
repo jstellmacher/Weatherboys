@@ -68,11 +68,10 @@ body{
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
 #hoverBtn{
-    height:20px;
-    width: 20px;
+    height:4vh;
+    width: 20vw;
     background: rgb(255, 0, 0);
     border-radius: 25px;
-    z-index: 1;
 }
 #results{
     background: rgba(255, 255, 255, 0.24);

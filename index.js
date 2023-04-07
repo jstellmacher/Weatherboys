@@ -82,8 +82,8 @@ function displayData(wetData) {
   console.log(results.textContent);
 }
 const moreResults = document.querySelector("#moreData");
-function hoverData(wetData){
-    moreData.textContent = ` `;
+function hoverData(wetData) {
+  moreData.textContent = `I should be hidden for the most part${wetData}`;
 }
 
 // ^^^ Why am I not able to see the data? is it because of the wrong syntax?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -104,8 +104,13 @@ const submitBtn = document.addEventListener("click", () => {
 // e.target.inputbar.value;
 
 const hoverData = document.addEventListener("onmouseenter", (e) => {
-document.querySelector("moreData");
+  document.querySelector("moreData");
   const title = document.createElement(h5);
   title.textContent = "Extra Information";
+  if (hoverData) {
+    document.getElementById("moreData").hidden = true;
+  } else {
+    document.getElementById("moreData").hidden = false;
+  }
 });
-onmouseover = (e) =>{}
+// onmouseover = (e) => {};
