@@ -65,8 +65,14 @@ body{
     border-radius: 25px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.9px);
-    backdrop-filter: blur(6.9px);
     border: 2px solid rgba(255, 255, 255, 0.3);
+}
+#hoverBtn{
+    height:20px;
+    width: 20px;
+    background: rgb(255, 0, 0);
+    border-radius: 25px;
+    z-index: 1;
 }
 #results{
     background: rgba(255, 255, 255, 0.24);
@@ -74,7 +80,6 @@ body{
     width: 60vw;
     border-radius: 25px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.9px);
     backdrop-filter: blur(6.9px);
     border: 2px solid rgba(255, 255, 255, 0.3);
     text-align: center;

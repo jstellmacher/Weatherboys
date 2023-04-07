@@ -103,9 +103,9 @@ const submitBtn = document.addEventListener("click", () => {
 // const inputBar = document.querySelector("inputbar");
 // e.target.inputbar.value;
 
-// const hoverData = document.addEventListener("mouseover", (e) => {
-// document.querySelector("moreData");
-//   const title = document.createElement(h5);
-//   title.textContent = "Extra Information";
-// });
-//onmouseover = (e) =>{}
+const hoverData = document.addEventListener("onmouseenter", (e) => {
+document.querySelector("moreData");
+  const title = document.createElement(h5);
+  title.textContent = "Extra Information";
+});
+onmouseover = (e) =>{}
