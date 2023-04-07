@@ -59,10 +59,11 @@ function getLocation() {
 function showPosition(position) {
   error.textContent =
     // rome-ignore lint/style/useTemplate: <explanation>
-    "Latitude: " +
-    position.coords.latitude +
-    "<br>Longitude: " +
-    position.coords.longitude;
+    `Latitude:  
+    ${position.coords.latitude}
+    
+    Longitude:  
+    ${position.coords.longitude}`;
   fetchWeather(position.coords.latitude, position.coords.longitude);
 }
 const fetchWeather = (lat, long) => {
@@ -105,16 +106,17 @@ const submitBtn = document.addEventListener("click", () => {
 // const inputBar = document.querySelector("inputbar");
 // e.target.inputbar.value;
 const plzWork = document.querySelector("#hoverBtn");
-const leave = document.querySelector("#hoverBtn")
+const leave = document.querySelector("#hoverBtn");
 // ???????????????????????????????????????????????????????????????????????????? Section Break
 const hoverFun = document.addEventListener("mouseenter", (e) => {
-   document.querySelector("moreData");
-   const title = document.querySelector("#hoverBtn");
+  document.querySelector("moreData");
+  const title = document.querySelector("#hoverBtn");
   e.target.plzWork = console.log("You hovered over me!");
 
-  title.textContent = "Extra Information";
+  
   if (hoverFun) {
     document.getElementById("moreData").hidden = true;
+    title.textContent = "Extra Information";
   } else {
     document.getElementById("moreData").hidden = false;
   }

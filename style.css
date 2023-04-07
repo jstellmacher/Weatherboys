@@ -57,6 +57,16 @@ body{
     /* min-height: 100vh; */
 }
 /* !^^^^"global centering kind of" */
+div#error{
+    
+    text-align: center;
+    background: rgba(255, 255, 255, 0.24);
+    height: 2vh;
+    width: 60vw;
+    border-radius: 25px 0px 25px 25px;    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
 #moreData{
     
     background: rgba(255, 255, 255, 0.24);
