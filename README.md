@@ -15,4 +15,4 @@ Article about it ^: [Article Link](https://dev.to/jstellmacher/that-is-so-fetch-
 <hr>
 
 Preview of Process
-![Outline With Pieces And Shades Of Blue]("https://github.com/jstellmacher/Weatherboys/blob/main/img/project_middle.png")
+![Outline With Pieces And Shades Of Blue]()
