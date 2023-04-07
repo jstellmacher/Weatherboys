@@ -82,7 +82,7 @@ function displayData(wetData) {
   results.textContent = `
     On the date ${wetData.daily.time} it is at max temperature ${wetData.daily.temperature_2m_max}
     `;
-  console.log(results.textContent);
+  //console.log(results.textContent);
 }
 const moreResults = document.querySelector("#moreData");
 function hoverData(wetData) {
@@ -104,11 +104,13 @@ const submitBtn = document.addEventListener("click", () => {
 
 // const inputBar = document.querySelector("inputbar");
 // e.target.inputbar.value;
-
-const hoverFun = document.addEventListener("onmouseenter", (e) => {
-  document.querySelector("moreData");
-  const title = document.querySelector("#hoverBtn");
-  console.log("You hovered over me!");
+const plzWork = document.querySelector("#hoverBtn");
+const leave = document.querySelector("#hoverBtn")
+// ???????????????????????????????????????????????????????????????????????????? Section Break
+const hoverFun = document.addEventListener("mouseenter", (e) => {
+   document.querySelector("moreData");
+   const title = document.querySelector("#hoverBtn");
+  e.target.plzWork = console.log("You hovered over me!");
 
   title.textContent = "Extra Information";
   if (hoverFun) {
@@ -117,7 +119,7 @@ const hoverFun = document.addEventListener("onmouseenter", (e) => {
     document.getElementById("moreData").hidden = false;
   }
 });
-const byeHoverFun = document.addEventListener("onmouseleave", (e) => {
+const byeHoverFun = document.addEventListener("mouseleave", (e) => {
   document.querySelector("moreData");
   const title = document.querySelector("#hoverBtn");
   console.log("You left!");
