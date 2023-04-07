@@ -81,6 +81,10 @@ function displayData(wetData) {
     `;
   console.log(results.textContent);
 }
+const moreResults = document.querySelector("#moreData");
+function hoverData(wetData){
+    moreData.textContent = ` `;
+}
 
 // ^^^ Why am I not able to see the data? is it because of the wrong syntax?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
