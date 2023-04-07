@@ -62,7 +62,8 @@ div#error{
     background: rgba(255, 255, 255, 0.24);
     height: 2vh;
     width: 60vw;
-    border-radius: 25px 0px 25px 25px;    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px 25px 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.9px);
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
@@ -71,19 +72,19 @@ div#error{
     background: rgba(255, 255, 255, 0.24);
     height: 20vh;
     width: 60vw;
-    border-radius: 25px;
+    border-radius: 25px 0px 25px 25px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.9px);
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
 div#hoverBtn{
-    position:relative; left: 30%; top: 20%;
+    position:relative; left: 10%; top: auto;
     /* double check ^ */
     text-align: center;
-    height:40%;
-    width: 40%;
+    height:80%;
+    width: 80%;
     background: rgb(255, 0, 0);
-    border-radius: 25px;
+    border-radius: 25px 0px 25px 25px;
     
 }
 #hoverBtn:hover{
@@ -96,12 +97,12 @@ h3{
     background: rgba(255, 255, 255, 0.24);
     height: 20vh;
     width: 60vw;
-    border-radius: 25px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.9px);
     border: 2px solid rgba(255, 255, 255, 0.3);
     text-align: center;
     margin: auto;
+    border-radius: 25px 0px 25px 25px;
         
 }
 .card{/* From https://css.glass */
