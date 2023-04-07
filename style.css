@@ -58,7 +58,6 @@ body{
 }
 /* !^^^^"global centering kind of" */
 div#error{
-    
     text-align: center;
     background: rgba(255, 255, 255, 0.24);
     height: 2vh;
@@ -77,11 +76,21 @@ div#error{
     backdrop-filter: blur(6.9px);
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
-#hoverBtn{
+div#hoverBtn{
+    position:relative; left: 19vw; top: 8vh;
+    /* double check ^ */
+    text-align: center;
     height:4vh;
     width: 20vw;
     background: rgb(255, 0, 0);
     border-radius: 25px;
+    
+}
+#hoverBtn:hover{
+    background: rgb(0, 85, 255);
+}
+h3{
+    text-align: center;
 }
 #results{
     background: rgba(255, 255, 255, 0.24);
