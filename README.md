@@ -10,6 +10,8 @@ API Used: [Open-Meteo](https://open-meteo.com/)
 
 Github site version of it: [Weather App](https://jstellmacher.github.io/Weatherboys/)
 
+**Collaborative** Version with @Chaospearl64 or his link (https://github.com/Chaospearl64/Weatherboys)
+
 Article about it ^: [Article Link](https://dev.to/jstellmacher/that-is-so-fetch-weather-api-webapp-1fo5)
 
 <hr>
