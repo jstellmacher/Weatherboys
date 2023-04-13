@@ -1,4 +1,4 @@
-# Weatherboys
+# Weatherboys Documentation
 
 <hr>
 
@@ -17,4 +17,17 @@ Article about the app - walkthrough on how to build something similar but not a 
 <hr>
 
 Preview of Process
-![Outline With Pieces And Shades Of Blue](img/project_middle.png)
+![Outline With Pieces And Shades Of Blue](./img/project_middle.png)
+
+TLDR:
+
+<hr>
+
+#How To Use
+
+<hr>
+
+1. Accept or Decline the Location Prompt
+    a. The way this was created was by creating a getLocation() function that I built that was then triggered by an event listener
+    b. More Information:
+2.
